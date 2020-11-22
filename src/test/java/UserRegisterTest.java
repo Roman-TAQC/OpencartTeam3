@@ -1,6 +1,9 @@
 import com.opencart.navigation.Navigation;
+import com.opencart.pages.BasePage;
 import com.opencart.steps.MainPageBL;
+import com.opencart.steps.login.LoginPageBL;
 import com.opencart.steps.register.RegisterPageBL;
+import com.opencart.steps.search.SearchPageBL;
 import org.testng.annotations.Test;
 
 import static com.opencart.enums.URLs.BASE_URL;
