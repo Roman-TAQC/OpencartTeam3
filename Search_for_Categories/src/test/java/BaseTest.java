@@ -12,7 +12,7 @@ public class BaseTest {
 
     @BeforeClass
     public void createDriver() {
-        DriverRepository.instansWebBrowser();
+        DriverRepository.instanceWebBrowser();
     }
 
     @AfterSuite
