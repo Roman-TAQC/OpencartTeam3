@@ -10,7 +10,6 @@ import org.testng.Assert;
 public class LoginPageBL {
 
     private WebDriver driver;
-
     private LoginPage loginPage;
     private SuccessLoginPage successLoginPage;
 
@@ -26,9 +25,8 @@ public class LoginPageBL {
 
         successLoginPage = new SuccessLoginPage();
         return this;
-
     }
-
+    
     private void inputEmail(String email) {
         loginPage.getEmailInput().clear();
         loginPage.getEmailInput().sendKeys(email);

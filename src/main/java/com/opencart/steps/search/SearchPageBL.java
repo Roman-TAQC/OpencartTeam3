@@ -11,7 +11,6 @@ import org.testng.Assert;
 public class SearchPageBL {
 
     private WebDriver driver;
-
     private SearchPage searchPage;
     private SuccessSearchPage successSearchPage;
 
@@ -22,13 +21,10 @@ public class SearchPageBL {
     public SearchPageBL SearchProduct() {
         SearchModel searchModel = SearchModelRepository.getSearchModel();
         inputSearch(searchModel.getSearch());
-        clickOnDescriptionBox();
+        clickOnDescriptionBox(1);
         clickSearchButton();
-
-
         successSearchPage = new SuccessSearchPage();
         return this;
-
     }
 
     private void inputSearch(String search) {
@@ -36,10 +32,9 @@ public class SearchPageBL {
         searchPage.getSearchInput().sendKeys(search);
     }
 
-    private void clickOnDescriptionBox(){
-        new DriverUtils().clickOnElementJS(searchPage.getDescription());
+    private void clickOnDescriptionBox(int value){
+        new DriverUtils().clickOnElementJS(searchPage.clickProductDescription(value));
     }
-
 
     private void clickSearchButton() {
         searchPage.getSearchButton().click();
