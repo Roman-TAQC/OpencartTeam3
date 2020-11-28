@@ -1,7 +1,8 @@
 package com.opencart.enums;
 
 public enum URLs {
-    BASE_URL("http://localhost/opencart/index.php");
+
+    BASE_URL("http://localhost/opencart/upload");
 
     private final String value;
 
@@ -12,4 +13,5 @@ public enum URLs {
     public String getValue() {
         return value;
     }
+
 }

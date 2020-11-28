@@ -5,7 +5,7 @@ import org.testng.annotations.BeforeSuite;
 
 public class BaseTest {
 
-    @BeforeSuite
+    @BeforeSuite()
     public void setup() {
         DriverRepository.downloadWebDriver();
     }
@@ -14,7 +14,6 @@ public class BaseTest {
     public void createDriver() {
         DriverRepository.instanceWebBrowser();
     }
-
 
     @AfterSuite
     public void closeBrowser() {

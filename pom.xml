@@ -4,19 +4,22 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>HW_opencart_test</groupId>
-    <artifactId>HW_opencart_test</artifactId>
+    <groupId>Search_for_Categories</groupId>
+    <artifactId>Search_for_Categories</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <testng.version>6.8.8</testng.version>
         <selenium-server.version>3.14.0</selenium-server.version>
+        <selenium-firefox-driver.version>2.53.1</selenium-firefox-driver.version>
         <selenium-java.version>2.53.1</selenium-java.version>
         <logback-classic.version>1.2.3</logback-classic.version>
-        <maven-surefire.version>3.0.0-M5</maven-surefire.version>
+        <junit-jupiter-engine.version>5.4.0</junit-jupiter-engine.version>
+        <maven-surefire.version>2.19</maven-surefire.version>
         <maven-surefire-reports-plugin.version>2.19.1</maven-surefire-reports-plugin.version>
         <allure-maven.version>2.8</allure-maven.version>
+
 
     </properties>
 
@@ -65,10 +68,13 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>11</source>
-                    <target>11</target>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
+
+
 </project>
